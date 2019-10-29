@@ -1,0 +1,219 @@
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="ISE EiffelStudio version 17.05.10.0416 GPL Edition - linux-x86-64">
+<meta name="description" content="A default business model."/>
+<meta name="author" content="Jackie Wang"/>
+<meta name="keywords" content="Eiffel class"/>
+<meta name="keywords" content="Eiffel class"/>
+<TITLE>etf_model Text</TITLE>
+<LINK REL="stylesheet" HREF="../default.css" TYPE="text/css">
+<SCRIPT TYPE="text/javascript" SRC="../goto.html"></SCRIPT>
+</HEAD>
+<BODY>
+<P ALIGN="CENTER">Automatic generation produced by ISE Eiffel</P>
+<pre><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_model_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_model_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="etf_model"></TD>
+</TR></TABLE></FORM><SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">description</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;A</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">default</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">business</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">model</SPAN><SPAN CLASS="estring">.</SPAN><SPAN CLASS="estring">&quot;</SPAN>
+	<SPAN CLASS="eitag">author</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;Jackie</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">Wang&quot;</SPAN>
+	<SPAN CLASS="eitag">date</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;$Date$&quot;</SPAN>
+	<SPAN CLASS="eitag">revision</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;$Revision$&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">class</SPAN> 
+	<A CLASS="eclass" HREF="../tictac/etf_model.html">ETF_MODEL</A>
+
+<SPAN CLASS="ekeyword">inherit</SPAN>
+	<SPAN CLASS="neclass">ANY</SPAN>
+		<SPAN CLASS="ekeyword">redefine</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_out">out</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+<SPAN CLASS="ekeyword">create</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../tictac/etf_model_access.html">ETF_MODEL_ACCESS</A><SPAN CLASS="esymbol">}</SPAN>
+	<A CLASS="efeature" HREF="../tictac/etf_model.html#f_make">make</A>
+
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="esymbol">{</SPAN>NONE<SPAN CLASS="esymbol">}</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Initialization</SPAN>
+
+	<A NAME="f_make"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_make">make</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Initialization</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">for</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="equoted">Current</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_model.html#f_s">s</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make_empty</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_i">i</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">0</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_model.html#f_command_manager">command_manager</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_make">make</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_model.html#f_player_x">player_x</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/player.html#f_make">make</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;&quot;<SPAN CLASS="esymbol">,</SPAN> &quot;X&quot;<SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_model.html#f_player_o">player_o</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/player.html#f_make">make</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;&quot;<SPAN CLASS="esymbol">,</SPAN> &quot;O&quot;<SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_set_turn">set_turn</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_model.html#f_player_x">player_x</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_model.html#f_board">board</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/board.html#f_make">make</A>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_starting_player">starting_player</A> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../tictac/etf_model.html#f_player_x">player_x</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_model.html#f_output_status">output_status</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make_from_string</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;ok:  =&gt; start new game&quot;<SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">model</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">attributes</SPAN>
+
+	<A NAME="f_s"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_s">s</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">STRING_8</SPAN>
+
+	<A NAME="f_i"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_i">i</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">INTEGER_32</SPAN>
+
+	<A NAME="f_command_manager"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_command_manager">command_manager</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../tictac/operation_manager.html">OPERATION_MANAGER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">mamanger</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">commands/operations</SPAN>
+
+	<A NAME="f_player_x"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_player_x">player_x</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../tictac/player.html">PLAYER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">player</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">X</SPAN>
+
+	<A NAME="f_player_o"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_player_o">player_o</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../tictac/player.html">PLAYER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">player</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">O</SPAN>
+
+	<A NAME="f_turn"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_turn">turn</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../tictac/player.html">PLAYER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">turn</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">player</SPAN>
+
+	<A NAME="f_board"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_board">board</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../tictac/board.html">BOARD</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">game</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">board</SPAN>
+
+	<A NAME="f_output_status"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_output_status">output_status</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">STRING_8</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">output</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">string</SPAN>
+
+	<A NAME="f_game_state"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_game_state">game_state</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">BOOLEAN</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">game</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">state</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">is</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">true</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">for</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">running</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">and</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">false</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">for</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">not</SPAN><SPAN CLASS="ecomment">.</SPAN>
+
+	<A NAME="f_starting_player"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_starting_player">starting_player</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../tictac/player.html">PLAYER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">starting</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">player</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">turn</SPAN><SPAN CLASS="ecomment">.</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">If</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">A</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">starts</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">first</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">game,</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">B</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">starts</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">next</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">and</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">vice</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">versa</SPAN><SPAN CLASS="ecomment">.</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">model</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">operations</SPAN>
+
+	<A NAME="f_default_update"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_default_update">default_update</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Perform</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">update</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">to</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">model</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">state</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_i">i</A> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../tictac/etf_model.html#f_i">i</A> <SPAN CLASS="esymbol">+</SPAN> <SPAN CLASS="enumber">1</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_reset"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_reset">reset</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Reset</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">model</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">state</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_make">make</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">OPERATIONS</SPAN>
+<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">new_game</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">command</SPAN>
+
+	<A NAME="f_new_game"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_new_game">new_game</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">player1</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">STRING_8</SPAN><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">player2</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">STRING_8</SPAN><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_command_manager">command_manager</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_execute_command">execute_command</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">create</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../tictac/new_game.html">NEW_GAME</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/new_game.html#f_make">make</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Current</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">player1</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">player2</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_play"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_play">play</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">name</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">STRING_8</SPAN><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">cell</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">INTEGER_32</SPAN><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_command_manager">command_manager</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_execute_command">execute_command</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">create</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../tictac/play.html">PLAY</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/play.html#f_make">make</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Current</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">name</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">cell</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_update_game_state">update_game_state</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_play_again"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_play_again">play_again</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_command_manager">command_manager</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_execute_command">execute_command</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">create</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../tictac/play_again.html">PLAY_AGAIN</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/play_again.html#f_make">make</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Current</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_undo"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_undo">undo</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_command_manager">command_manager</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_undo">undo</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_redo"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_redo">redo</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_command_manager">command_manager</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_redo">redo</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">model</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">commands</SPAN><SPAN CLASS="ecomment"> </SPAN>
+
+	<A NAME="f_set_output_status"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_set_output_status">set_output_status</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">op</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">STRING_8</SPAN><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_output_status">output_status</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="elocal">op</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_set_game_state"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_set_game_state">set_game_state</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">gs</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">BOOLEAN</SPAN><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_game_state">game_state</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="elocal">gs</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_set_turn"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_set_turn">set_turn</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">player</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../tictac/player.html">PLAYER</A><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_turn">turn</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="elocal">player</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_set_starting_player"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_set_starting_player">set_starting_player</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sp</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../tictac/player.html">PLAYER</A><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_starting_player">starting_player</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="elocal">sp</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_clear_history"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_clear_history">clear_history</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_command_manager">command_manager</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_clear_lists">clear_lists</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_update_game_state"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_update_game_state">update_game_state</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../tictac/etf_model.html#f_board">board</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/board.html#f_is_board_filled">is_board_filled</A> <SPAN CLASS="ekeyword">or else</SPAN> <A CLASS="efeature" HREF="../tictac/etf_model.html#f_board">board</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/board.html#f_is_there_winner">is_there_winner</A> <SPAN CLASS="ekeyword">then</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_model.html#f_set_game_state">set_game_state</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">False</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_update_score"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_update_score">update_score</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../tictac/etf_model.html#f_board">board</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/board.html#f_is_player_x_winner">is_player_x_winner</A> <SPAN CLASS="ekeyword">then</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_model.html#f_player_x">player_x</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/player.html#f_update_score">update_score</A>
+			<SPAN CLASS="ekeyword">elseif</SPAN> <A CLASS="efeature" HREF="../tictac/etf_model.html#f_board">board</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/board.html#f_is_player_o_winner">is_player_o_winner</A> <SPAN CLASS="ekeyword">then</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_model.html#f_player_o">player_o</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/player.html#f_update_score">update_score</A>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_reset_scores"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_reset_scores">reset_scores</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_player_x">player_x</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/player.html#f_reset_score">reset_score</A>
+			<A CLASS="efeature" HREF="../tictac/etf_model.html#f_player_o">player_o</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/player.html#f_reset_score">reset_score</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">queries</SPAN>
+
+	<A NAME="f_is_undo_available"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_is_undo_available">is_undo_available</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">BOOLEAN</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../tictac/etf_model.html#f_command_manager">command_manager</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_undo_list">undo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">count</SPAN> <SPAN CLASS="esymbol">&gt;</SPAN> <SPAN CLASS="enumber">0</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_is_redo_available"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_is_redo_available">is_redo_available</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">BOOLEAN</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../tictac/etf_model.html#f_command_manager">command_manager</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_redo_list">redo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">count</SPAN> <SPAN CLASS="esymbol">&gt;</SPAN> <SPAN CLASS="enumber">0</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_out"></A><A CLASS="efeature" HREF="../tictac/etf_model.html#f_out">out</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">STRING_8</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">New</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">string</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">containing</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">terse</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">printable</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">representation</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">current</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">object</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <SPAN CLASS="ekeyword">Result</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make_from_string</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;  &quot;<SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">Result</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">append</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_model.html#f_output_status">output_status</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">Result</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">append_character</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="echar">'%N'</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">Result</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">append</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_model.html#f_board">board</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/board.html#f_out">out</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">Result</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">append_character</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="echar">'%N'</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">Result</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">append</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_model.html#f_player_x">player_x</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/player.html#f_out">out</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">Result</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">append_character</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="echar">'%N'</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">Result</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">append</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_model.html#f_player_o">player_o</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/player.html#f_out">out</A><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">end</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">class </SPAN><A CLASS="eclass" HREF="../tictac/etf_model.html">ETF_MODEL</A><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_model_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_model_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="etf_model"></TD>
+</TR></TABLE></FORM></pre>
+<P ALIGN="CENTER"> &#045;&#045; Generated by ISE Eiffel &#045;&#045; 
+<BR>For more details: <A HREF="http://www.eiffel.com">www.eiffel.com</A></P>
+</BODY>
+</HTML>
+

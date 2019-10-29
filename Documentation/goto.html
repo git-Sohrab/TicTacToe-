@@ -1,0 +1,65 @@
+<!--
+	classList = new Array (
+		"BOARD",
+		"ETF_CMD_LINE_OUTPUT_HANDLER",
+		"ETF_COMMAND",
+		"ETF_GUI",
+		"ETF_GUI_OUTPUT_HANDLER",
+		"ETF_MAIN_WINDOW",
+		"ETF_MAIN_WINDOW_IMP",
+		"ETF_MODEL",
+		"ETF_MODEL_ACCESS",
+		"ETF_MODEL_FACADE",
+		"ETF_NEW_GAME",
+		"ETF_PLAY",
+		"ETF_PLAY_AGAIN",
+		"ETF_REDO",
+		"ETF_UNDO",
+		"NEW_GAME",
+		"OPERATION",
+		"OPERATION_MANAGER",
+		"PLAY",
+		"PLAYER",
+		"PLAY_AGAIN"
+	);
+
+	locationList = new Array (
+		"tictac/board_chart.html",
+		"tictac/etf_cmd_line_output_handler_chart.html",
+		"tictac/etf_command_chart.html",
+		"tictac/etf_gui_chart.html",
+		"tictac/etf_gui_output_handler_chart.html",
+		"tictac/etf_main_window_chart.html",
+		"tictac/etf_main_window_imp_chart.html",
+		"tictac/etf_model_chart.html",
+		"tictac/etf_model_access_chart.html",
+		"tictac/etf_model_facade_chart.html",
+		"tictac/etf_new_game_chart.html",
+		"tictac/etf_play_chart.html",
+		"tictac/etf_play_again_chart.html",
+		"tictac/etf_redo_chart.html",
+		"tictac/etf_undo_chart.html",
+		"tictac/new_game_chart.html",
+		"tictac/operation_chart.html",
+		"tictac/operation_manager_chart.html",
+		"tictac/play_chart.html",
+		"tictac/player_chart.html",
+		"tictac/play_again_chart.html"
+	);
+
+	function indexOfClass (name) {
+		for (i = 0; i < classList.length; i++) {
+			if (name == classList[i]) return i;
+		}
+		return -1;
+	};
+
+	function go_to (baseLocation, className) {
+		var index = indexOfClass (className.toUpperCase ());
+		if (index >= 0) {
+			window.location = baseLocation + locationList[index];
+		} else {
+			alert ("Class " + className.toUpperCase () + " does not exist in system");
+		}
+	}
+// -->

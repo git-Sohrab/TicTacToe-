@@ -1,0 +1,67 @@
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="ISE EiffelStudio version 17.05.10.0416 GPL Edition - linux-x86-64">
+<meta name="description" content="The interface for an input COMMAND"/>
+<meta name="author" content=""/>
+<meta name="keywords" content="Eiffel class"/>
+<meta name="keywords" content="Eiffel class"/>
+<TITLE>etf_command Text</TITLE>
+<LINK REL="stylesheet" HREF="../default.css" TYPE="text/css">
+<SCRIPT TYPE="text/javascript" SRC="../goto.html"></SCRIPT>
+</HEAD>
+<BODY>
+<P ALIGN="CENTER">Automatic generation produced by ISE Eiffel</P>
+<pre><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_command_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_command_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="etf_command"></TD>
+</TR></TABLE></FORM><SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">description</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;The</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">interface</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">for</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">an</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">input</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">COMMAND&quot;</SPAN>
+	<SPAN CLASS="eitag">author</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;&quot;</SPAN>
+	<SPAN CLASS="eitag">date</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;$Date$&quot;</SPAN>
+	<SPAN CLASS="eitag">revision</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;$Revision$&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">deferred</SPAN> <SPAN CLASS="ekeyword">class</SPAN> 
+	<A CLASS="eclass" HREF="../tictac/etf_command.html">ETF_COMMAND</A>
+
+<SPAN CLASS="ekeyword">inherit</SPAN>
+	<SPAN CLASS="neclass">ETF_COMMAND_INTERFACE</SPAN>
+		<SPAN CLASS="ekeyword">redefine</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_command.html#f_make">make</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="esymbol">{</SPAN>NONE<SPAN CLASS="esymbol">}</SPAN> 
+
+	<A NAME="f_make"></A><A CLASS="efeature" HREF="../tictac/etf_command.html#f_make">make</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">an_etf_cmd_name</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">STRING_8</SPAN><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">etf_cmd_args</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">TUPLE</SPAN><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">an_etf_cmd_container</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ETF_ABSTRACT_UI_INTERFACE</SPAN><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">model_access</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../tictac/etf_model_access.html">ETF_MODEL_ACCESS</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="ekeyword" HREF="file#f_feature">Precursor</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">an_etf_cmd_name</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">etf_cmd_args</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">an_etf_cmd_container</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_command.html#f_model">model</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="elocal">model_access</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model_access.html#f_m">M</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Attributes</SPAN>
+<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">may</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">declare</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">your</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">own</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">model</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">state</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">here</SPAN>
+
+	<A NAME="f_model"></A><A CLASS="efeature" HREF="../tictac/etf_command.html#f_model">model</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../tictac/etf_model.html">ETF_MODEL</A>
+	
+<SPAN CLASS="ekeyword">end</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">class </SPAN><A CLASS="eclass" HREF="../tictac/etf_command.html">ETF_COMMAND</A><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_command_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_command_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="etf_command"></TD>
+</TR></TABLE></FORM></pre>
+<P ALIGN="CENTER"> &#045;&#045; Generated by ISE Eiffel &#045;&#045; 
+<BR>For more details: <A HREF="http://www.eiffel.com">www.eiffel.com</A></P>
+</BODY>
+</HTML>
+

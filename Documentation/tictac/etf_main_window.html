@@ -1,0 +1,218 @@
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="ISE EiffelStudio version 17.05.10.0416 GPL Edition - linux-x86-64">
+<meta name="description" content="Main window of ETF project."/>
+<meta name="generator" content="EiffelBuild"/>
+<meta name="keywords" content="Eiffel class"/>
+<meta name="keywords" content="Eiffel class"/>
+<TITLE>etf_main_window Text</TITLE>
+<LINK REL="stylesheet" HREF="../default.css" TYPE="text/css">
+<SCRIPT TYPE="text/javascript" SRC="../goto.html"></SCRIPT>
+</HEAD>
+<BODY>
+<P ALIGN="CENTER">Automatic generation produced by ISE Eiffel</P>
+<pre><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_main_window_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_main_window_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="etf_main_window"></TD>
+</TR></TABLE></FORM><SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">description</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;Main</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">window</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">of</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">ETF</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">project</SPAN><SPAN CLASS="estring">.</SPAN><SPAN CLASS="estring">&quot;</SPAN>
+	<SPAN CLASS="eitag">generator</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;EiffelBuild&quot;</SPAN>
+	<SPAN CLASS="eitag">date</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;$Date:</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">2010-12-22</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">10:39:24</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">-0800</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">(Wed,</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">22</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">Dec</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">2010)</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">$&quot;</SPAN>
+	<SPAN CLASS="eitag">revision</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;$Revision:</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">85202</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">$&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">class</SPAN> 
+	<A CLASS="eclass" HREF="../tictac/etf_main_window.html">ETF_MAIN_WINDOW</A>
+
+<SPAN CLASS="ekeyword">inherit</SPAN>
+	<A CLASS="eclass" HREF="../tictac/etf_main_window_imp.html">ETF_MAIN_WINDOW_IMP</A>
+		<SPAN CLASS="ekeyword">rename</SPAN>
+			<SPAN CLASS="nefeature">raise</SPAN> <SPAN CLASS="ekeyword">as</SPAN> <SPAN CLASS="nefeature">main_window_raise</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<SPAN CLASS="neclass">EXCEPTIONS</SPAN>
+		<SPAN CLASS="ekeyword">rename</SPAN>
+			<SPAN CLASS="nefeature">raise</SPAN> <SPAN CLASS="ekeyword">as</SPAN> <SPAN CLASS="nefeature">exceptions_raise</SPAN>
+		<SPAN CLASS="ekeyword">undefine</SPAN>
+			<SPAN CLASS="nefeature">default_create</SPAN><SPAN CLASS="esymbol">,</SPAN>
+			<SPAN CLASS="nefeature">copy</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+<SPAN CLASS="ekeyword">create</SPAN> 
+	<SPAN CLASS="nefeature">default_create</SPAN>
+
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="esymbol">{</SPAN>NONE<SPAN CLASS="esymbol">}</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Initialization</SPAN>
+
+	<A NAME="f_user_create_interface_objects"></A><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_user_create_interface_objects">user_create_interface_objects</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Create</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">any</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">auxilliary</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">objects</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">needed</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">for</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">MAIN_WINDOW</SPAN><SPAN CLASS="ecomment">.</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Initialization</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">for</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">these</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">objects</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">must</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">be</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">performed</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">in</SPAN><SPAN CLASS="ecomment"> </SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_user_initialization">user_initialization</A><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_business_obj">business_obj</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model_facade.html#f_make">make</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_session_file">session_file</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make_with_name</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_session_file_path">Session_file_path</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_output">output</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">insert_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_business_obj">business_obj</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model_facade.html#f_model">model</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model.html#f_out">out</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status">status</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">insert_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;List of commands: %N&quot;<SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status">status</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">insert_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;================= %N&quot;<SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status">status</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">insert_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_business_obj">business_obj</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model_facade.html#f_man_page">Man_page</A><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_user_initialization"></A><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_user_initialization">user_initialization</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Perform</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">any</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">initialization</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">on</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">objects</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">created</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">by</SPAN><SPAN CLASS="ecomment"> </SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_user_create_interface_objects">user_create_interface_objects</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">and</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">from</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">within</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">current</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">class</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">itself</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="esymbol">{</SPAN>NONE<SPAN CLASS="esymbol">}</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Business</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Object</SPAN>
+
+	<A NAME="f_business_obj"></A><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_business_obj">business_obj</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../tictac/etf_model_facade.html">ETF_MODEL_FACADE</A>
+
+	<A NAME="f_session_file"></A><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_session_file">session_file</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">PLAIN_TEXT_FILE</SPAN>
+
+	<A NAME="f_session_file_path"></A><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_session_file_path">Session_file_path</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">STRING_8</SPAN> <SPAN CLASS="esymbol">=</SPAN> &quot;./session.txt&quot;
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="esymbol">{</SPAN>NONE<SPAN CLASS="esymbol">}</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Auxiliary</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Commands</SPAN>
+
+	<A NAME="f_clear_display"></A><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_clear_display">clear_display</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_output">output</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">set_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;&quot;<SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status">status</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">set_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;&quot;<SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command">command</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">set_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;&quot;<SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_history">history</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">set_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;&quot;<SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_display_history"></A><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_display_history">display_history</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">trace</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">LIST</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">STRING_8</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">i</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">INTEGER_32</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">from</SPAN>
+				<SPAN CLASS="elocal">i</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">1</SPAN>
+				<SPAN CLASS="elocal">trace</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">start</SPAN>
+			<SPAN CLASS="ekeyword">until</SPAN>
+				<SPAN CLASS="elocal">trace</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">after</SPAN>
+			<SPAN CLASS="ekeyword">loop</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_history">history</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">append_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">trace</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">item</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="elocal">i</SPAN> <SPAN CLASS="esymbol">&lt;</SPAN> <SPAN CLASS="elocal">trace</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">count</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_history">history</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">append_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;%N&quot;<SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="elocal">trace</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">forth</SPAN>
+				<SPAN CLASS="elocal">i</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="elocal">i</SPAN> <SPAN CLASS="esymbol">+</SPAN> <SPAN CLASS="enumber">1</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="esymbol">{</SPAN>NONE<SPAN CLASS="esymbol">}</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Implementation</SPAN>
+
+	<A NAME="f_command_return_key_pressed"></A><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_command_return_key_pressed">command_return_key_pressed</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Hit</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">return</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">key</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">to</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">execute</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">typed</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">command</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_execute_pressed">execute_pressed</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_execute_pressed"></A><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_execute_pressed">execute_pressed</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Called</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">by</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="equoted">select_actions</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_execute">execute</A><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">cmd</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">STRING_8</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="elocal">cmd</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command">command</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">text</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">as_string_8</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_execute_command">execute_command</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">cmd</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="ekeyword">not</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_business_obj">business_obj</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model_facade.html#f_error">error</A> <SPAN CLASS="ekeyword">then</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_business_obj">business_obj</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model_facade.html#f_history">history</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">count</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="enumber">1</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_session_file">session_file</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">wipe_out</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_session_file">session_file</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">open_append</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_session_file">session_file</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">put_string</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">cmd</SPAN> <SPAN CLASS="esymbol">+</SPAN> &quot;%N&quot;<SPAN CLASS="esymbol">)</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_session_file">session_file</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">close</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_reset_pressed"></A><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_reset_pressed">reset_pressed</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Reset</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">history</SPAN><SPAN CLASS="ecomment">.</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Two</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">consecutive</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">clicks</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">'</SPAN><SPAN CLASS="ecomment">reset</SPAN><SPAN CLASS="ecomment">'</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">will</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">also</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">wipe</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">out</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">session</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">file</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_business_obj">business_obj</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model_facade.html#f_reset">reset</A>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_clear_display">clear_display</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_load_pressed"></A><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_load_pressed">load_pressed</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Load</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">session</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">file</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">if</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">it</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">exists</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">fu</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ETF_FILE_UTILITY</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <SPAN CLASS="elocal">fu</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">read_text_from</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_session_file_path">Session_file_path</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="elocal">fu</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">error</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_clear_display">clear_display</A>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status">status</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">insert_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">fu</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">error_string</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">else</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="ekeyword">not</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_business_obj">business_obj</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model_facade.html#f_history">history</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">is_empty</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_reset_pressed">reset_pressed</A>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="elocal">fu</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">remove_comment_lines</SPAN>
+				<SPAN CLASS="ekeyword">across</SPAN>
+					<SPAN CLASS="elocal">fu</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">items</SPAN> <SPAN CLASS="ekeyword">as</SPAN> cmd
+				<SPAN CLASS="ekeyword">loop</SPAN>
+					<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_execute_command">execute_command</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">cmd</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">item</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="esymbol">{</SPAN>NONE<SPAN CLASS="esymbol">}</SPAN> 
+
+	<A NAME="f_execute_command"></A><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_execute_command">execute_command</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">cmd</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">STRING_8</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Execute</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">'</SPAN><SPAN CLASS="ecomment">cmd</SPAN><SPAN CLASS="ecomment">'</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">and</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">print</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">off</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">stack</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">trace</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">if</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">there</SPAN><SPAN CLASS="ecomment">'</SPAN><SPAN CLASS="ecomment">s</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">any</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">contract</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">violation</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">problem</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">STRING_8</SPAN>
+			<SPAN CLASS="elocal">error</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">BOOLEAN</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <SPAN CLASS="elocal">problem</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make_empty</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="ekeyword">not</SPAN> <SPAN CLASS="elocal">error</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_business_obj">business_obj</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model_facade.html#f_execute_cmd">execute_cmd</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">cmd</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_clear_display">clear_display</A>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_display_history">display_history</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_business_obj">business_obj</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model_facade.html#f_history">history</A><SPAN CLASS="esymbol">)</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status">status</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">insert_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_business_obj">business_obj</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model_facade.html#f_status_message">status_message</A><SPAN CLASS="esymbol">)</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_output">output</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">insert_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_business_obj">business_obj</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model_facade.html#f_output_message">output_message</A><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_business_obj">business_obj</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model_facade.html#f_error">error</A> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command">command</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">set_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">cmd</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">else</SPAN>
+				<SPAN CLASS="elocal">problem</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">append</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;%NThere was a problem:%N&quot;<SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="ekeyword">attached</SPAN> <SPAN CLASS="nefeature">meaning</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="nefeature">exception</SPAN><SPAN CLASS="esymbol">)</SPAN> <SPAN CLASS="ekeyword">as</SPAN> s <SPAN CLASS="ekeyword">then</SPAN>
+					<SPAN CLASS="elocal">problem</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">append</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;  &quot; <SPAN CLASS="esymbol">+</SPAN> <SPAN CLASS="elocal">s</SPAN> <SPAN CLASS="esymbol">+</SPAN> &quot;%N&quot;<SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="ekeyword">attached</SPAN> <SPAN CLASS="nefeature">tag_name</SPAN> <SPAN CLASS="ekeyword">as</SPAN> s <SPAN CLASS="ekeyword">then</SPAN>
+					<SPAN CLASS="elocal">problem</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">append</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;  Tag: &quot; <SPAN CLASS="esymbol">+</SPAN> <SPAN CLASS="elocal">s</SPAN> <SPAN CLASS="esymbol">+</SPAN> &quot;%N&quot;<SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="ekeyword">attached</SPAN> <SPAN CLASS="nefeature">exception_trace</SPAN> <SPAN CLASS="ekeyword">as</SPAN> s <SPAN CLASS="ekeyword">then</SPAN>
+					<SPAN CLASS="elocal">problem</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">append</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;%NHere is the stack trace%N&quot;<SPAN CLASS="esymbol">)</SPAN>
+					<SPAN CLASS="elocal">problem</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">append</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">s</SPAN><SPAN CLASS="esymbol">)</SPAN>
+					<SPAN CLASS="elocal">problem</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">append</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;%NEnd of stack trace...%N&quot;<SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_clear_display">clear_display</A>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_display_history">display_history</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_business_obj">business_obj</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model_facade.html#f_history">history</A><SPAN CLASS="esymbol">)</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status">status</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">insert_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">problem</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_output">output</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">insert_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window.html#f_business_obj">business_obj</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model_facade.html#f_output_message">output_message</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">rescue</SPAN>
+			<SPAN CLASS="elocal">error</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+			<SPAN CLASS="ekeyword">retry</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">end</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">class </SPAN><A CLASS="eclass" HREF="../tictac/etf_main_window.html">ETF_MAIN_WINDOW</A><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_main_window_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_main_window_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="etf_main_window"></TD>
+</TR></TABLE></FORM></pre>
+<P ALIGN="CENTER"> &#045;&#045; Generated by ISE Eiffel &#045;&#045; 
+<BR>For more details: <A HREF="http://www.eiffel.com">www.eiffel.com</A></P>
+</BODY>
+</HTML>
+

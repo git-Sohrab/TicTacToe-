@@ -1,0 +1,73 @@
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="ISE EiffelStudio version 17.05.10.0416 GPL Edition - linux-x86-64">
+<meta name="description" content=""/>
+<meta name="author" content=""/>
+<meta name="keywords" content="Eiffel class"/>
+<meta name="keywords" content="Eiffel class"/>
+<TITLE>etf_redo Text</TITLE>
+<LINK REL="stylesheet" HREF="../default.css" TYPE="text/css">
+<SCRIPT TYPE="text/javascript" SRC="../goto.html"></SCRIPT>
+</HEAD>
+<BODY>
+<P ALIGN="CENTER">Automatic generation produced by ISE Eiffel</P>
+<pre><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_redo_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_redo_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="etf_redo"></TD>
+</TR></TABLE></FORM><SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">description</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;&quot;</SPAN>
+	<SPAN CLASS="eitag">author</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;&quot;</SPAN>
+	<SPAN CLASS="eitag">date</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;$Date$&quot;</SPAN>
+	<SPAN CLASS="eitag">revision</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;$Revision$&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">class</SPAN> 
+	<A CLASS="eclass" HREF="../tictac/etf_redo.html">ETF_REDO</A>
+
+<SPAN CLASS="ekeyword">inherit</SPAN>
+	<SPAN CLASS="neclass">ETF_REDO_INTERFACE</SPAN>
+		<SPAN CLASS="ekeyword">redefine</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_redo.html#f_redo">redo</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+<SPAN CLASS="ekeyword">create</SPAN> 
+	<SPAN CLASS="nefeature">make</SPAN>
+
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">command</SPAN>
+
+	<A NAME="f_redo"></A><A CLASS="efeature" HREF="../tictac/etf_redo.html#f_redo">redo</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../tictac/etf_command.html#f_model">model</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model.html#f_game_state">game_state</A> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">False</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="ekeyword">not</SPAN> <A CLASS="efeature" HREF="../tictac/etf_command.html#f_model">model</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model.html#f_board">board</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/board.html#f_is_board_filled">is_board_filled</A> <SPAN CLASS="ekeyword">and</SPAN> <SPAN CLASS="ekeyword">not</SPAN> <A CLASS="efeature" HREF="../tictac/etf_command.html#f_model">model</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model.html#f_board">board</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/board.html#f_is_there_winner">is_there_winner</A> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../tictac/etf_command.html#f_model">model</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model.html#f_set_output_status">set_output_status</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;ok:  =&gt; start new game&quot;<SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">else</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../tictac/etf_command.html#f_model">model</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model.html#f_is_redo_available">is_redo_available</A> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../tictac/etf_command.html#f_model">model</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model.html#f_redo">redo</A>
+				<SPAN CLASS="ekeyword">else</SPAN>
+					<A CLASS="efeature" HREF="../tictac/etf_command.html#f_model">model</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model.html#f_set_output_status">set_output_status</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;ok: =&gt; &quot; <SPAN CLASS="esymbol">+</SPAN> <A CLASS="efeature" HREF="../tictac/etf_command.html#f_model">model</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/etf_model.html#f_turn">turn</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/player.html#f_name">name</A> <SPAN CLASS="esymbol">+</SPAN> &quot; plays next&quot;<SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="nefeature">etf_cmd_container</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">on_change</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">notify</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="ekeyword">Current</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">end</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">class </SPAN><A CLASS="eclass" HREF="../tictac/etf_redo.html">ETF_REDO</A><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_redo_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_redo_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="etf_redo"></TD>
+</TR></TABLE></FORM></pre>
+<P ALIGN="CENTER"> &#045;&#045; Generated by ISE Eiffel &#045;&#045; 
+<BR>For more details: <A HREF="http://www.eiffel.com">www.eiffel.com</A></P>
+</BODY>
+</HTML>
+

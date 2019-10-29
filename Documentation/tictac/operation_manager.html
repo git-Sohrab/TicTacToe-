@@ -1,0 +1,104 @@
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="ISE EiffelStudio version 17.05.10.0416 GPL Edition - linux-x86-64">
+<meta name="description" content="Manager class of the operations and the undo-redo lists."/>
+<meta name="author" content="S Oryakhel"/>
+<meta name="keywords" content="Eiffel class"/>
+<meta name="keywords" content="Eiffel class"/>
+<TITLE>operation_manager Text</TITLE>
+<LINK REL="stylesheet" HREF="../default.css" TYPE="text/css">
+<SCRIPT TYPE="text/javascript" SRC="../goto.html"></SCRIPT>
+</HEAD>
+<BODY>
+<P ALIGN="CENTER">Automatic generation produced by ISE Eiffel</P>
+<pre><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="operation_manager_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="operation_manager_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="operation_manager"></TD>
+</TR></TABLE></FORM><SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">description</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;Manager</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">class</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">of</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">the</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">operations</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">and</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">the</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">undo-redo</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">lists</SPAN><SPAN CLASS="estring">.</SPAN><SPAN CLASS="estring">&quot;</SPAN>
+	<SPAN CLASS="eitag">author</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;S</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">Oryakhel&quot;</SPAN>
+	<SPAN CLASS="eitag">date</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;$Date$&quot;</SPAN>
+	<SPAN CLASS="eitag">revision</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;$Revision$&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">class</SPAN> 
+	<A CLASS="eclass" HREF="../tictac/operation_manager.html">OPERATION_MANAGER</A>
+
+<SPAN CLASS="ekeyword">create</SPAN> 
+	<A CLASS="efeature" HREF="../tictac/operation_manager.html#f_make">make</A>
+
+<SPAN CLASS="ekeyword">feature</SPAN> 
+
+	<A NAME="f_make"></A><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_make">make</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/operation_manager.html#f_undo_list">undo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">20</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/operation_manager.html#f_redo_list">redo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">20</SPAN><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">attributes</SPAN>
+
+	<A NAME="f_undo_list"></A><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_undo_list">undo_list</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ARRAYED_STACK</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="ekeyword">detachable</SPAN> <A CLASS="eclass" HREF="../tictac/operation.html">OPERATION</A><SPAN CLASS="esymbol">]</SPAN>
+
+	<A NAME="f_redo_list"></A><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_redo_list">redo_list</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ARRAYED_STACK</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="ekeyword">detachable</SPAN> <A CLASS="eclass" HREF="../tictac/operation.html">OPERATION</A><SPAN CLASS="esymbol">]</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">commands</SPAN>
+
+	<A NAME="f_execute_command"></A><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_execute_command">execute_command</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">command</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../tictac/operation.html">OPERATION</A><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="elocal">command</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/operation.html#f_execute">execute</A>
+			<A CLASS="efeature" HREF="../tictac/operation_manager.html#f_undo_list">undo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">put</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">command</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/operation_manager.html#f_redo_list">redo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">wipe_out</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_undo"></A><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_undo">undo</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">check</SPAN>
+					<SPAN CLASS="ekeyword">attached</SPAN> <A CLASS="efeature" HREF="../tictac/operation_manager.html#f_undo_list">undo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">item</SPAN> <SPAN CLASS="ekeyword">as</SPAN> cmd
+			<SPAN CLASS="ekeyword">then</SPAN>
+				<SPAN CLASS="elocal">cmd</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/operation.html#f_undo">undo</A>
+				<A CLASS="efeature" HREF="../tictac/operation_manager.html#f_redo_list">redo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">put</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">cmd</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../tictac/operation_manager.html#f_undo_list">undo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">count</SPAN> <SPAN CLASS="esymbol">&gt;</SPAN> <SPAN CLASS="enumber">0</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../tictac/operation_manager.html#f_undo_list">undo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">remove</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_redo"></A><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_redo">redo</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">check</SPAN>
+					<SPAN CLASS="ekeyword">attached</SPAN> <A CLASS="efeature" HREF="../tictac/operation_manager.html#f_redo_list">redo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">item</SPAN> <SPAN CLASS="ekeyword">as</SPAN> cmd
+			<SPAN CLASS="ekeyword">then</SPAN>
+				<SPAN CLASS="elocal">cmd</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../tictac/operation.html#f_redo">redo</A>
+				<A CLASS="efeature" HREF="../tictac/operation_manager.html#f_undo_list">undo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">put</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">cmd</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../tictac/operation_manager.html#f_redo_list">redo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">count</SPAN> <SPAN CLASS="esymbol">&gt;</SPAN> <SPAN CLASS="enumber">0</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../tictac/operation_manager.html#f_redo_list">redo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">remove</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_clear_lists"></A><A CLASS="efeature" HREF="../tictac/operation_manager.html#f_clear_lists">clear_lists</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/operation_manager.html#f_undo_list">undo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">wipe_out</SPAN>
+			<A CLASS="efeature" HREF="../tictac/operation_manager.html#f_redo_list">redo_list</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">wipe_out</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">end</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">class </SPAN><A CLASS="eclass" HREF="../tictac/operation_manager.html">OPERATION_MANAGER</A><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="operation_manager_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="operation_manager_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="operation_manager"></TD>
+</TR></TABLE></FORM></pre>
+<P ALIGN="CENTER"> &#045;&#045; Generated by ISE Eiffel &#045;&#045; 
+<BR>For more details: <A HREF="http://www.eiffel.com">www.eiffel.com</A></P>
+</BODY>
+</HTML>
+

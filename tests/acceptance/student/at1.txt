@@ -1,0 +1,17 @@
+new_game("A","A")
+undo
+new_game("#","$")
+undo
+new_game("A", "B")
+play("A",2)
+play("B", 4)
+new_game("#","$")
+undo
+redo
+undo
+new_game("A", "B")
+undo
+undo
+undo
+undo
+

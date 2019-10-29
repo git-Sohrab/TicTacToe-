@@ -1,0 +1,369 @@
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="ISE EiffelStudio version 17.05.10.0416 GPL Edition - linux-x86-64">
+<meta name="description" content="Objects that represent an EV_TITLED_WINDOW."/>
+<meta name="generator" content="EiffelBuild"/>
+<meta name="keywords" content="Eiffel class"/>
+<meta name="keywords" content="Eiffel class"/>
+<TITLE>etf_main_window_imp Text</TITLE>
+<LINK REL="stylesheet" HREF="../default.css" TYPE="text/css">
+<SCRIPT TYPE="text/javascript" SRC="../goto.html"></SCRIPT>
+</HEAD>
+<BODY>
+<P ALIGN="CENTER">Automatic generation produced by ISE Eiffel</P>
+<pre><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_main_window_imp_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_main_window_imp_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="etf_main_window_imp"></TD>
+</TR></TABLE></FORM><SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">description</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;Objects</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">that</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">represent</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">an</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">EV_TITLED_WINDOW</SPAN><SPAN CLASS="estring">.</SPAN><SPAN CLASS="estring">&quot;</SPAN>
+	<SPAN CLASS="eitag">generator</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;EiffelBuild&quot;</SPAN>
+	<SPAN CLASS="eitag">date</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;$Date:</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">2014-01-22</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">11:12:21</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">-0800</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">(Wed,</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">22</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">Jan</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">2014)</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">$&quot;</SPAN>
+	<SPAN CLASS="eitag">revision</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;$Revision:</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">94077</SPAN><SPAN CLASS="estring"> </SPAN><SPAN CLASS="estring">$&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">deferred</SPAN> <SPAN CLASS="ekeyword">class</SPAN> 
+	<A CLASS="eclass" HREF="../tictac/etf_main_window_imp.html">ETF_MAIN_WINDOW_IMP</A>
+
+<SPAN CLASS="ekeyword">inherit</SPAN>
+	<SPAN CLASS="neclass">EV_TITLED_WINDOW</SPAN>
+		<SPAN CLASS="ekeyword">redefine</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_create_interface_objects">create_interface_objects</A><SPAN CLASS="esymbol">,</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_initialize">initialize</A><SPAN CLASS="esymbol">,</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_is_in_default_state">is_in_default_state</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="esymbol">{</SPAN>NONE<SPAN CLASS="esymbol">}</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Initialization</SPAN>
+
+	<A NAME="f_initialize"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_initialize">initialize</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Initialize</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="equoted">Current</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="ekeyword" HREF="file#f_feature">Precursor</A> <SPAN CLASS="esymbol">{</SPAN><SPAN CLASS="neclass">EV_TITLED_WINDOW</SPAN><SPAN CLASS="esymbol">}</SPAN>
+			<SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_hbox_main">hbox_main</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_hbox_main">hbox_main</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_cell">cell</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_cell">cell</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_vbox">vbox</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_vbox">vbox</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command_label">command_label</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_vbox">vbox</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command">command</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_vbox">vbox</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_hbox_buttons">hbox_buttons</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_hbox_buttons">hbox_buttons</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_execute">execute</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_hbox_buttons">hbox_buttons</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_reset">reset</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_hbox_buttons">hbox_buttons</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_load">load</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_vbox">vbox</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_output">output</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_vbox">vbox</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_l_ev_horizontal_separator_1">l_ev_horizontal_separator_1</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_vbox">vbox</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status_label">status_label</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_vbox">vbox</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status">status</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_hbox_main">hbox_main</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_history">history</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_hbox_main">hbox_main</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">enable_homogeneous</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_vbox">vbox</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">disable_item_expand</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command_label">command_label</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_vbox">vbox</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">disable_item_expand</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command">command</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_vbox">vbox</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">disable_item_expand</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_hbox_buttons">hbox_buttons</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_vbox">vbox</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">disable_item_expand</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_l_ev_horizontal_separator_1">l_ev_horizontal_separator_1</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_vbox">vbox</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">disable_item_expand</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status_label">status_label</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command_label">command_label</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">set_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;Enter Command (%&quot;man%&quot; for options)&quot;<SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_hbox_buttons">hbox_buttons</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">enable_homogeneous</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_execute">execute</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">set_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;Execute&quot;<SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_reset">reset</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">set_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;Reset&quot;<SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_load">load</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">set_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;Load&quot;<SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_output">output</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">disable_edit</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status_label">status_label</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">set_background_color</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">create</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">{</SPAN><SPAN CLASS="neclass">EV_COLOR</SPAN><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make_with_8_bit_rgb</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">0</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="enumber">0</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="enumber">0</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status_label">status_label</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">set_foreground_color</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">create</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">{</SPAN><SPAN CLASS="neclass">EV_COLOR</SPAN><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make_with_8_bit_rgb</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">255</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="enumber">255</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="enumber">255</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status_label">status_label</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">set_text</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;Status&quot;<SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status_label">status_label</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">align_text_left</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status">status</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">disable_edit</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_history">history</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">set_minimum_width</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">200</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_history">history</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">set_minimum_height</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">100</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_history">history</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">disable_edit</SPAN>
+			<SPAN CLASS="nefeature">set_minimum_width</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">700</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="nefeature">set_minimum_height</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">500</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="nefeature">set_title</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;system etf_template GUI&quot;<SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_set_all_attributes_using_constants">set_all_attributes_using_constants</A>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command">command</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">return_actions</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">agent</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command_return_key_pressed">command_return_key_pressed</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_execute">execute</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">select_actions</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">agent</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_execute_pressed">execute_pressed</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_reset">reset</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">select_actions</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">agent</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_reset_pressed">reset_pressed</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_load">load</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">select_actions</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">agent</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_load_pressed">load_pressed</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="nefeature">close_request_actions</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">extend</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">agent</SPAN> <SPAN CLASS="nefeature">destroy_and_exit_if_last</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_user_initialization">user_initialization</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_create_interface_objects"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_create_interface_objects">create_interface_objects</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Create</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">objects</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_hbox_main">hbox_main</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_cell">cell</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_vbox">vbox</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command_label">command_label</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command">command</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_hbox_buttons">hbox_buttons</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_execute">execute</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_reset">reset</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_load">load</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_output">output</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_l_ev_horizontal_separator_1">l_ev_horizontal_separator_1</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status_label">status_label</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status">status</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_history">history</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_string_constant_set_procedures">string_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">10</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_string_constant_retrieval_functions">string_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">10</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_constant_set_procedures">integer_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">10</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_constant_retrieval_functions">integer_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">10</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_pixmap_constant_set_procedures">pixmap_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">10</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_pixmap_constant_retrieval_functions">pixmap_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">10</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_interval_constant_retrieval_functions">integer_interval_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">10</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_interval_constant_set_procedures">integer_interval_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">10</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_font_constant_set_procedures">font_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">10</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_font_constant_retrieval_functions">font_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">10</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_pixmap_constant_retrieval_functions">pixmap_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">10</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_color_constant_set_procedures">color_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">10</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_color_constant_retrieval_functions">color_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">10</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_user_create_interface_objects">user_create_interface_objects</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Access</SPAN>
+
+	<A NAME="f_hbox_main"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_hbox_main">hbox_main</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">EV_HORIZONTAL_BOX</SPAN>
+
+	<A NAME="f_hbox_buttons"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_hbox_buttons">hbox_buttons</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">EV_HORIZONTAL_BOX</SPAN>
+
+	<A NAME="f_cell"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_cell">cell</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">EV_CELL</SPAN>
+
+	<A NAME="f_vbox"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_vbox">vbox</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">EV_VERTICAL_BOX</SPAN>
+
+	<A NAME="f_command_label"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command_label">command_label</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">EV_LABEL</SPAN>
+
+	<A NAME="f_status_label"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status_label">status_label</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">EV_LABEL</SPAN>
+
+	<A NAME="f_command"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command">command</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">EV_TEXT_FIELD</SPAN>
+
+	<A NAME="f_execute"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_execute">execute</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">EV_BUTTON</SPAN>
+
+	<A NAME="f_reset"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_reset">reset</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">EV_BUTTON</SPAN>
+
+	<A NAME="f_load"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_load">load</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">EV_BUTTON</SPAN>
+
+	<A NAME="f_output"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_output">output</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">EV_RICH_TEXT</SPAN>
+
+	<A NAME="f_status"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_status">status</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">EV_RICH_TEXT</SPAN>
+
+	<A NAME="f_history"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_history">history</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">EV_RICH_TEXT</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="esymbol">{</SPAN>NONE<SPAN CLASS="esymbol">}</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Implementation</SPAN>
+
+	<A NAME="f_l_ev_horizontal_separator_1"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_l_ev_horizontal_separator_1">l_ev_horizontal_separator_1</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">EV_HORIZONTAL_SEPARATOR</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="esymbol">{</SPAN>NONE<SPAN CLASS="esymbol">}</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Implementation</SPAN>
+
+	<A NAME="f_is_in_default_state"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_is_in_default_state">is_in_default_state</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">BOOLEAN</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Is</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="equoted">Current</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">in</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">its</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">default</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">state?</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_user_create_interface_objects"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_user_create_interface_objects">user_create_interface_objects</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Feature</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">for</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">custom</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">user</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">interface</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">object</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">creation,</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">called</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">at</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">end</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_create_interface_objects">create_interface_objects</A><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">deferred</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_user_initialization"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_user_initialization">user_initialization</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Feature</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">for</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">custom</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">initialization,</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">called</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">at</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">end</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_initialize">initialize</A><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">deferred</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_command_return_key_pressed"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command_return_key_pressed">command_return_key_pressed</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Called</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">by</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="equoted">return_actions</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_command">command</A><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">deferred</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_execute_pressed"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_execute_pressed">execute_pressed</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Called</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">by</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="equoted">select_actions</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_execute">execute</A><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">deferred</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_reset_pressed"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_reset_pressed">reset_pressed</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Called</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">by</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="equoted">select_actions</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_reset">reset</A><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">deferred</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_load_pressed"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_load_pressed">load_pressed</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Called</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">by</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="equoted">select_actions</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_load">load</A><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">deferred</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="esymbol">{</SPAN>NONE<SPAN CLASS="esymbol">}</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Constant</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">setting</SPAN>
+
+	<A NAME="f_set_attributes_using_string_constants"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_set_attributes_using_string_constants">set_attributes_using_string_constants</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Set</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">all</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">attributes</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">relying</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">on</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">string</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">constants</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">to</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">current</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">value</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">associated</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">constant</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">s</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">detachable</SPAN> <SPAN CLASS="neclass">STRING_32</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">from</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_string_constant_set_procedures">string_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">start</SPAN>
+			<SPAN CLASS="ekeyword">until</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_string_constant_set_procedures">string_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">off</SPAN>
+			<SPAN CLASS="ekeyword">loop</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_string_constant_retrieval_functions">string_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">i_th</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_string_constant_set_procedures">string_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">index</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">call</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Void</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="elocal">s</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_string_constant_retrieval_functions">string_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">i_th</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_string_constant_set_procedures">string_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">index</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">last_result</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="elocal">s</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_string_constant_set_procedures">string_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">item</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">call</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="elocal">s</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_string_constant_set_procedures">string_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">forth</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_set_attributes_using_integer_constants"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_set_attributes_using_integer_constants">set_attributes_using_integer_constants</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Set</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">all</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">attributes</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">relying</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">on</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">integer</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">constants</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">to</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">current</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">value</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">associated</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">constant</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">i</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">INTEGER_32</SPAN>
+			<SPAN CLASS="elocal">arg1</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">arg2</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">INTEGER_32</SPAN>
+			<SPAN CLASS="elocal">int</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">INTEGER_INTERVAL</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">from</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_constant_set_procedures">integer_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">start</SPAN>
+			<SPAN CLASS="ekeyword">until</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_constant_set_procedures">integer_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">off</SPAN>
+			<SPAN CLASS="ekeyword">loop</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_constant_retrieval_functions">integer_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">i_th</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_constant_set_procedures">integer_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">index</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">call</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Void</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="elocal">i</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_constant_retrieval_functions">integer_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">i_th</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_constant_set_procedures">integer_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">index</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">last_result</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_constant_set_procedures">integer_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">item</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">call</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="elocal">i</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_constant_set_procedures">integer_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">forth</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">from</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_interval_constant_retrieval_functions">integer_interval_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">start</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_interval_constant_set_procedures">integer_interval_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">start</SPAN>
+			<SPAN CLASS="ekeyword">until</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_interval_constant_retrieval_functions">integer_interval_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">off</SPAN>
+			<SPAN CLASS="ekeyword">loop</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_interval_constant_retrieval_functions">integer_interval_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">item</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">call</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Void</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="elocal">arg1</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_interval_constant_retrieval_functions">integer_interval_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">item</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">last_result</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_interval_constant_retrieval_functions">integer_interval_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">forth</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_interval_constant_retrieval_functions">integer_interval_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">item</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">call</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Void</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="elocal">arg2</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_interval_constant_retrieval_functions">integer_interval_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">item</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">last_result</SPAN>
+				<SPAN CLASS="ekeyword">create</SPAN> <SPAN CLASS="elocal">int</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">make</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">arg1</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">arg2</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_interval_constant_set_procedures">integer_interval_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">item</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">call</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="elocal">int</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_interval_constant_retrieval_functions">integer_interval_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">forth</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_interval_constant_set_procedures">integer_interval_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">forth</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_set_attributes_using_pixmap_constants"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_set_attributes_using_pixmap_constants">set_attributes_using_pixmap_constants</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Set</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">all</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">attributes</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">relying</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">on</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">pixmap</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">constants</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">to</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">current</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">value</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">associated</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">constant</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">p</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">detachable</SPAN> <SPAN CLASS="neclass">EV_PIXMAP</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">from</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_pixmap_constant_set_procedures">pixmap_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">start</SPAN>
+			<SPAN CLASS="ekeyword">until</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_pixmap_constant_set_procedures">pixmap_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">off</SPAN>
+			<SPAN CLASS="ekeyword">loop</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_pixmap_constant_retrieval_functions">pixmap_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">i_th</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_pixmap_constant_set_procedures">pixmap_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">index</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">call</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Void</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="elocal">p</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_pixmap_constant_retrieval_functions">pixmap_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">i_th</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_pixmap_constant_set_procedures">pixmap_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">index</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">last_result</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="elocal">p</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_pixmap_constant_set_procedures">pixmap_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">item</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">call</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="elocal">p</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_pixmap_constant_set_procedures">pixmap_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">forth</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_set_attributes_using_font_constants"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_set_attributes_using_font_constants">set_attributes_using_font_constants</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Set</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">all</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">attributes</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">relying</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">on</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">font</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">constants</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">to</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">current</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">value</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">associated</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">constant</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">f</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">detachable</SPAN> <SPAN CLASS="neclass">EV_FONT</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">from</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_font_constant_set_procedures">font_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">start</SPAN>
+			<SPAN CLASS="ekeyword">until</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_font_constant_set_procedures">font_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">off</SPAN>
+			<SPAN CLASS="ekeyword">loop</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_font_constant_retrieval_functions">font_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">i_th</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_font_constant_set_procedures">font_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">index</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">call</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Void</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="elocal">f</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_font_constant_retrieval_functions">font_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">i_th</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_font_constant_set_procedures">font_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">index</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">last_result</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="elocal">f</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_font_constant_set_procedures">font_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">item</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">call</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="elocal">f</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_font_constant_set_procedures">font_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">forth</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_set_attributes_using_color_constants"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_set_attributes_using_color_constants">set_attributes_using_color_constants</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Set</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">all</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">attributes</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">relying</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">on</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">color</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">constants</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">to</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">current</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">value</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">associated</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">constant</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">c</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">detachable</SPAN> <SPAN CLASS="neclass">EV_COLOR</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">from</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_color_constant_set_procedures">color_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">start</SPAN>
+			<SPAN CLASS="ekeyword">until</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_color_constant_set_procedures">color_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">off</SPAN>
+			<SPAN CLASS="ekeyword">loop</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_color_constant_retrieval_functions">color_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">i_th</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_color_constant_set_procedures">color_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">index</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">call</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Void</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="elocal">c</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_color_constant_retrieval_functions">color_constant_retrieval_functions</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">i_th</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_color_constant_set_procedures">color_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">index</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">last_result</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="elocal">c</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_color_constant_set_procedures">color_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">item</SPAN><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">call</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="elocal">c</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_color_constant_set_procedures">color_constant_set_procedures</A><SPAN CLASS="edot">.</SPAN><SPAN CLASS="nefeature">forth</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_set_all_attributes_using_constants"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_set_all_attributes_using_constants">set_all_attributes_using_constants</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Set</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">all</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">attributes</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">relying</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">on</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">constants</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">to</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">current</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">calue</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">the</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">associated</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">constant</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_set_attributes_using_string_constants">set_attributes_using_string_constants</A>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_set_attributes_using_integer_constants">set_attributes_using_integer_constants</A>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_set_attributes_using_pixmap_constants">set_attributes_using_pixmap_constants</A>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_set_attributes_using_font_constants">set_attributes_using_font_constants</A>
+			<A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_set_attributes_using_color_constants">set_attributes_using_color_constants</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_string_constant_set_procedures"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_string_constant_set_procedures">string_constant_set_procedures</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ARRAYED_LIST</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">PROCEDURE</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">READABLE_STRING_GENERAL</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">]</SPAN>
+
+	<A NAME="f_string_constant_retrieval_functions"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_string_constant_retrieval_functions">string_constant_retrieval_functions</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ARRAYED_LIST</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">FUNCTION</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">STRING_32</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">]</SPAN>
+
+	<A NAME="f_integer_constant_set_procedures"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_constant_set_procedures">integer_constant_set_procedures</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ARRAYED_LIST</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">PROCEDURE</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">INTEGER_32</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">]</SPAN>
+
+	<A NAME="f_integer_constant_retrieval_functions"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_constant_retrieval_functions">integer_constant_retrieval_functions</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ARRAYED_LIST</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">FUNCTION</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">INTEGER_32</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">]</SPAN>
+
+	<A NAME="f_pixmap_constant_set_procedures"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_pixmap_constant_set_procedures">pixmap_constant_set_procedures</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ARRAYED_LIST</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">PROCEDURE</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">EV_PIXMAP</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">]</SPAN>
+
+	<A NAME="f_pixmap_constant_retrieval_functions"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_pixmap_constant_retrieval_functions">pixmap_constant_retrieval_functions</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ARRAYED_LIST</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">FUNCTION</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">EV_PIXMAP</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">]</SPAN>
+
+	<A NAME="f_integer_interval_constant_retrieval_functions"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_interval_constant_retrieval_functions">integer_interval_constant_retrieval_functions</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ARRAYED_LIST</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">FUNCTION</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">INTEGER_32</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">]</SPAN>
+
+	<A NAME="f_integer_interval_constant_set_procedures"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_interval_constant_set_procedures">integer_interval_constant_set_procedures</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ARRAYED_LIST</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">PROCEDURE</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">INTEGER_INTERVAL</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">]</SPAN>
+
+	<A NAME="f_font_constant_set_procedures"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_font_constant_set_procedures">font_constant_set_procedures</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ARRAYED_LIST</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">PROCEDURE</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">EV_FONT</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">]</SPAN>
+
+	<A NAME="f_font_constant_retrieval_functions"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_font_constant_retrieval_functions">font_constant_retrieval_functions</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ARRAYED_LIST</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">FUNCTION</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">EV_FONT</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">]</SPAN>
+
+	<A NAME="f_color_constant_set_procedures"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_color_constant_set_procedures">color_constant_set_procedures</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ARRAYED_LIST</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">PROCEDURE</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">EV_COLOR</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">]</SPAN>
+
+	<A NAME="f_color_constant_retrieval_functions"></A><A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_color_constant_retrieval_functions">color_constant_retrieval_functions</A><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">ARRAYED_LIST</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">FUNCTION</SPAN> <SPAN CLASS="esymbol">[</SPAN><SPAN CLASS="neclass">EV_COLOR</SPAN><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">]</SPAN>
+
+	<A NAME="f_integer_from_integer"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../tictac/etf_main_window_imp.html#f_integer_from_integer">integer_from_integer</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">an_integer</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">INTEGER_32</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="neclass">INTEGER_32</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">Return</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="equoted">an_integer</SPAN><SPAN CLASS="ecomment">,</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">used</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">for</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">creation</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">of</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">an</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">agent</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">that</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">returns</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">a</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">fixed</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">integer</SPAN><SPAN CLASS="ecomment"> </SPAN><SPAN CLASS="ecomment">value</SPAN><SPAN CLASS="ecomment">.</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="elocal">an_integer</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">end</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">class </SPAN><A CLASS="eclass" HREF="../tictac/etf_main_window_imp.html">ETF_MAIN_WINDOW_IMP</A><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_main_window_imp_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="etf_main_window_imp_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="etf_main_window_imp"></TD>
+</TR></TABLE></FORM></pre>
+<P ALIGN="CENTER"> &#045;&#045; Generated by ISE Eiffel &#045;&#045; 
+<BR>For more details: <A HREF="http://www.eiffel.com">www.eiffel.com</A></P>
+</BODY>
+</HTML>
+
